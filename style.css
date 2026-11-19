@@ -50,3 +50,15 @@ footer a{color:var(--grey);margin-right:14px}
   .home footer{font-size:12px}
   .home footer .wrap{padding-block:10px}
 }
+.home header nav{display:none}
+.links{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.links a{border:1px solid var(--ink);color:var(--ink);text-decoration:none;padding:8px 18px;border-radius:999px;font-size:16px}
+.links a:hover{background:var(--ink);color:var(--paper)}
+@media (max-width:760px){
+  .home .links{margin-top:12px;gap:8px}
+  .home .links a{padding:6px 12px;font-size:14px}
+}
+@media (max-width:760px) and (max-height:700px){
+  .home .hero-art{max-height:20vh}
+  .home .lede{font-size:15px}
+}
