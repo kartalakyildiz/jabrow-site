@@ -34,7 +34,7 @@ def page(name: str, title: str, description: str, body: str) -> str:
 <link rel="icon" href="icon.png">
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body{' class="home"' if name == 'index' else ''}>
 <header class="site"><div class="wrap{' wide' if name == 'index' else ''}">
   <a class="brand" href="index.html"><img src="icon.png" alt="">Jabrow</a>
   <nav aria-label="Main">
