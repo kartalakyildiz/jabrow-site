@@ -35,16 +35,16 @@ def page(name: str, title: str, description: str, body: str) -> str:
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="site"><div class="wrap">
+<header class="site"><div class="wrap{' wide' if name == 'index' else ''}">
   <a class="brand" href="index.html"><img src="icon.png" alt="">Jabrow</a>
   <nav aria-label="Main">
 {nav}
   </nav>
 </div></header>
-<main><div class="wrap">
+<main><div class="wrap{' wide' if name == 'index' else ''}">
 {body.strip()}
 </div></main>
-<footer><div class="wrap">
+<footer><div class="wrap{' wide' if name == 'index' else ''}">
   <a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Use</a><a href="support.html">Support</a>
   <p>&copy; 2026 Batuhan Soyarslan &middot; Developed by Kartal Akyildiz &middot; Apple, iPhone and App Store are trademarks of Apple Inc.</p>
 </div></footer>
