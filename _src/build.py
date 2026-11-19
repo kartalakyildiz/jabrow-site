@@ -4,7 +4,7 @@
 from pathlib import Path
 
 UPDATED = 'November 19, 2026'
-EMAIL = 'jabrow.support@tickerand.ink'
+EMAIL = 'jabrow@bkverse.com'
 APP = 'Jabrow: Muay Thai &amp; Boxing'
 ROOT = Path(__file__).resolve().parent.parent
 BODIES = Path(__file__).resolve().parent / 'pages'
