@@ -11,7 +11,7 @@
     <li>The App does not use your camera, microphone, location services, contacts, photos or HealthKit.</li>
     <li>No advertising, no ad networks, no tracking across other companies&rsquo; apps or websites, and we never sell your data.</li>
     <li>Subscriptions are paid through Apple and verified by RevenueCat.</li>
-    <!-- ANALYTICS --><li>Anonymous usage analytics (PostHog) help us see which parts of the App work and where people get stuck. They are not linked to your identity.</li><!-- /ANALYTICS -->
+    <!-- ANALYTICS --><li>Anonymous usage analytics (PostHog) help us see which parts of the App work and where people get stuck. They are not linked to your identity, and you can turn them off in Settings.</li><!-- /ANALYTICS -->
   </ul>
 
   <h2>2. Information stored on your device</h2>
@@ -20,7 +20,7 @@
     <li><strong>Setup answers:</strong> the fighter look you picked, your training goal, Muay Thai experience, lead hand (stance), equipment, training days, session length, what usually breaks your routine, and your chosen coach.</li>
     <li><strong>Height and weight:</strong> asked during setup only to show a weight class on screen. They are not used for health purposes and never leave your device.</li>
     <li><strong>Training progress:</strong> completed sessions and rounds, experience points (XP), rank, rank exam results and streaks.</li>
-    <li><strong>Settings:</strong> for example whether music is on, which tips you have already seen, and whether the App has already shown Apple&rsquo;s rating dialog.</li>
+    <li><strong>Settings:</strong> for example whether music is on,<!-- ANALYTICS --> whether anonymous usage is shared,<!-- /ANALYTICS --> which tips you have already seen, and whether the App has already shown Apple&rsquo;s rating dialog.</li>
   </ul>
   <p>The App does not ask for your name, email address or phone number.</p>
 
@@ -37,7 +37,9 @@
     <li><strong>Device information:</strong> device model, iOS version and app version.</li>
     <li><strong>Approximate location:</strong> PostHog receives your IP address when the App connects and may use it to estimate a country and city. We do not collect precise location.</li>
     <li><strong>Never sent:</strong> your setup answers, height, weight, goal or any text you could type.</li>
+    <li><strong>Your choice:</strong> analytics are on unless you turn them off. You can turn them off at any time in the App: Settings &rarr; Share anonymous usage. While it is off, the App sends nothing to PostHog, also after it restarts, until you turn it on again.</li>
   </ul>
+  <p>To withdraw your consent for events already sent and have them deleted, email <a href="mailto:{{EMAIL}}">{{EMAIL}}</a>. Because the events carry no name or account, we may need details such as your device model and the dates you used the App to find them. Deleting the App also removes the random installation ID, so later events cannot be linked to earlier ones.</p>
   <p>See the <a href="https://posthog.com/privacy">PostHog Privacy Policy</a>.</p>
   <!-- /ANALYTICS -->
 
@@ -58,6 +60,7 @@
 
   <h2>9. Security</h2>
   <p>Your data is kept in the App&rsquo;s private storage and protected by iOS. Connections to RevenueCat<!-- ANALYTICS --> and PostHog<!-- /ANALYTICS --> are encrypted. We keep the data we handle to a minimum.</p>
+  <p>Apart from Apple, which handles payments under its own terms, we share data only with the service providers named in this policy (RevenueCat<!-- ANALYTICS --> and PostHog<!-- /ANALYTICS -->). They process it on our behalf, only for the purposes described here, and provide the same or equal protection of your data as this policy.</p>
 
   <h2>10. Changes</h2>
   <p>We may update this policy when the App changes. The &ldquo;Last updated&rdquo; date shows the current version.</p>

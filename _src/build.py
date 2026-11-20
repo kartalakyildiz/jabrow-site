@@ -4,6 +4,8 @@
 from pathlib import Path
 
 UPDATED = 'November 19, 2026'
+# A page changed after that carries its own date.
+PAGE_UPDATED = {'privacy': 'November 20, 2026'}
 EMAIL = 'jabrow@bkverse.com'
 APP = 'Jabrow: Muay Thai &amp; Boxing'
 ROOT = Path(__file__).resolve().parent.parent
@@ -55,6 +57,6 @@ def page(name: str, title: str, description: str, body: str) -> str:
 
 for name, (title, description) in PAGES.items():
     body = (BODIES / f'{name}.html').read_text(encoding='utf-8')
-    body = body.replace('{{UPDATED}}', UPDATED).replace('{{EMAIL}}', EMAIL).replace('{{APP}}', APP)
+    body = body.replace('{{UPDATED}}', PAGE_UPDATED.get(name, UPDATED)).replace('{{EMAIL}}', EMAIL).replace('{{APP}}', APP)
     (ROOT / f'{name}.html').write_text(page(name, title, description, body), encoding='utf-8')
     print('wrote', name + '.html')
