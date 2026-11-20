@@ -11,7 +11,7 @@
     <li>The App does not use your camera, microphone, location services, contacts, photos or HealthKit.</li>
     <li>No advertising, no ad networks, no tracking across other companies&rsquo; apps or websites, and we never sell your data.</li>
     <li>Subscriptions are paid through Apple and verified by RevenueCat.</li>
-    <!-- ANALYTICS --><li>Anonymous usage analytics (PostHog) help us see which parts of the App work and where people get stuck. They are not linked to your identity, and you can turn them off in Settings.</li><!-- /ANALYTICS -->
+    <!-- ANALYTICS --><li>Anonymous usage analytics (PostHog) help us see which parts of the App work and where people get stuck. They are not linked to your identity. Subscribers can turn them off in Settings; anyone can withdraw consent by email and ask us to delete them.</li><!-- /ANALYTICS -->
   </ul>
 
   <h2>2. Information stored on your device</h2>
@@ -35,11 +35,11 @@
   <ul>
     <li><strong>What is sent:</strong> which screens are opened, which setup steps are reached, whether the demo was played, when the subscription screen is shown and which plan is picked, whether a purchase or restore succeeded or failed, and when a training session starts, finishes or is ended early (with its length, rounds, XP, the coach and whether it was a rank exam).</li>
     <li><strong>Device information:</strong> device model, iOS version and app version.</li>
-    <li><strong>Approximate location:</strong> PostHog receives your IP address when the App connects and may use it to estimate a country and city. We do not collect precise location.</li>
+    <li><strong>IP address:</strong> PostHog receives your IP address when the App connects, because that is how the events are delivered. We do not use it to estimate your location and do not keep it.</li>
     <li><strong>Never sent:</strong> your setup answers, height, weight, goal or any text you could type.</li>
-    <li><strong>Your choice:</strong> analytics are on unless you turn them off. You can turn them off at any time in the App: Settings &rarr; Share anonymous usage. While it is off, the App sends nothing to PostHog, also after it restarts, until you turn it on again.</li>
+    <li><strong>Your choice:</strong> analytics are on unless they are turned off. Subscribers can turn them off at any time in the App: Settings &rarr; Share anonymous usage. While it is off, the App records no new events, also after it restarts, until it is turned on again; events recorded before you turned it off may still finish sending.</li>
   </ul>
-  <p>To withdraw your consent for events already sent and have them deleted, email <a href="mailto:{{EMAIL}}">{{EMAIL}}</a>. Because the events carry no name or account, we may need details such as your device model and the dates you used the App to find them. Deleting the App also removes the random installation ID, so later events cannot be linked to earlier ones.</p>
+  <p>Anyone, subscriber or not, can withdraw consent by email and ask us to delete the events already sent: write to <a href="mailto:{{EMAIL}}">{{EMAIL}}</a>. Because the events carry no name or account, we may need details such as your device model and the dates you used the App to find them. Deleting the App stops analytics on that iPhone and removes the random installation ID, so any later install cannot be linked to earlier events.</p>
   <p>See the <a href="https://posthog.com/privacy">PostHog Privacy Policy</a>.</p>
   <!-- /ANALYTICS -->
 
